@@ -17,7 +17,7 @@ kubectl create namespace argocd
 kubectl apply -n argocd -f https://raw.githubusercontent.com/argoproj/argo-cd/stable/manifests/install.yaml
 ```
 
-6. kubectl apply -k ./examples/canary
+7. add argocd application to demo application on default namespace: https://github.com/itai-codefresh/cncf-rollouts-demo
 
 
 
