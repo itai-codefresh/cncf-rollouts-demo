@@ -8,8 +8,10 @@ kubectl create namespace argo-rollouts
 kubectl apply -n argo-rollouts -f https://github.com/argoproj/argo-rollouts/releases/latest/download/install.yaml
 ```
 3. kubectl argo rollouts dashboard
+4. port forward `argocd-server`
+5. take secret from `initial-secret`
 
-4. install argo cd
+6. install argo cd
 ```bash
 kubectl create namespace argocd
 kubectl apply -n argocd -f https://raw.githubusercontent.com/argoproj/argo-cd/stable/manifests/install.yaml
@@ -22,6 +24,7 @@ kubectl apply -n argocd -f https://raw.githubusercontent.com/argoproj/argo-cd/st
 
 
 links:
-1. http://localhost:3100/rollout/canary-demo
-2. http://canary.localdev.me:8081/
-3. http://canary-preview.localdev.me:8081/
+1. argocd - https://localhost:8080/
+2. rollouts - http://localhost:3100/rollout/canary-demo
+3. application - http://canary.localdev.me:8081/
+4. http://canary-preview.localdev.me:8081/
