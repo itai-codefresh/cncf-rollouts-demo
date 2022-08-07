@@ -8,3 +8,4 @@ resources:
 - canary-preview-service.yaml
 - canary-preview-ingress.yaml
 - analysis-success-rate.yaml
+- pre-sync.yaml
