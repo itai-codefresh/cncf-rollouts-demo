@@ -10,7 +10,7 @@ spec:
     spec:
       containers:
         - name: validate
-          image: curlimages/curl
+          image: alpine
           command:
             - "exit 0"
       restartPolicy: Never
