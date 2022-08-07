@@ -16,8 +16,8 @@ spec:
             - "--fail-with-body"
             - "-X"
             - "POST"
-            - "--data-urlencode"
-            - "payload={\"app\": \"demo\"}"
+            - "-d"
+            - "{\"app\": demo}"
             - "https://fca8-2a0d-6fc2-66d2-e000-1df8-ff2d-39f6-bda6.eu.ngrok.io/operations/validate"
       restartPolicy: Never
   backoffLimit: 2
