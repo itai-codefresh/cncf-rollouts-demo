@@ -9,7 +9,6 @@ data:
     webhook:
       form:
         method: POST
-        path: <optional-path-template>
         body: |
           {
             "revision": {{.app.status.operationState.operation.sync.revision}},
