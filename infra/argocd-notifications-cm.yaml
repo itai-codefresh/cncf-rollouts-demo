@@ -4,7 +4,7 @@ metadata:
   name: argocd-notifications-cm
 data:
   service.webhook.form: |
-    url: https://fca8-2a0d-6fc2-66d2-e000-1df8-ff2d-39f6-bda6.eu.ngrok.io/events/argocd
+    url: https://fca8-2a0d-6fc2-66d2-e000-1df8-ff2d-39f6-bda6.eu.ngrok.io/event/argocd
   template.form-data: |
     webhook:
       form:
