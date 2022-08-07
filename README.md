@@ -20,7 +20,10 @@ kubectl apply -n argocd -f https://raw.githubusercontent.com/argoproj/argo-cd/st
 7. add argocd application to demo application on default namespace: https://github.com/itai-codefresh/cncf-rollouts-demo
 
 
-
+8. install argo cd notifications
+```bash
+kubectl apply -n argocd -f https://raw.githubusercontent.com/argoproj-labs/argocd-notifications/release-1.0/manifests/install.yaml
+```
 
 
 links:
