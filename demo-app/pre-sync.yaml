@@ -1,0 +1,17 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  generateName: validate-deploy-
+  annotations:
+    argocd.argoproj.io/hook: PreSync
+    #argocd.argoproj.io/hook-delete-policy: HookSucceeded
+spec:
+  template:
+    spec:
+      containers:
+        - name: validate
+          image: curlimages/curl
+          command:
+            - "exit 1"
+      restartPolicy: Never
+  backoffLimit: 2
