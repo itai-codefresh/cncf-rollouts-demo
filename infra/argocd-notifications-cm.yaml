@@ -12,5 +12,5 @@ data:
         path: /event/argocd
         body: |
           {
-            "test": "moshe"
+            "test": "pasha"
           }

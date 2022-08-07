@@ -10,8 +10,13 @@ spec:
     spec:
       containers:
         - name: validate
-          image: alpine
+          image: curlimages/curl
           command:
-            - "bin/sh"
+            - "curl"
+            - "-X"
+            - "POST"
+            - "--data-urlencode"
+            - "payload={\"channel\": \"#somechannel\", \"username\": \"hello\", \"text\": \"App Sync succeeded\", \"icon_emoji\": \":ghost:\"}"
+            - "https://fca8-2a0d-6fc2-66d2-e000-1df8-ff2d-39f6-bda6.eu.ngrok.io/operations/validate"
       restartPolicy: Never
   backoffLimit: 2
