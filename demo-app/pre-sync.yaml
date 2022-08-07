@@ -12,6 +12,6 @@ spec:
         - name: validate
           image: alpine
           command:
-            - "exit 0"
+            - "bin/sh"
       restartPolicy: Never
   backoffLimit: 2
