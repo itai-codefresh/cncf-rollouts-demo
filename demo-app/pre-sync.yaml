@@ -13,6 +13,7 @@ spec:
           image: curlimages/curl
           command:
             - "curl"
+            - "--fail-with-body"
             - "-X"
             - "POST"
             - "--data-urlencode"
